@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PingSweeper from "./components/PingSweeper";
 
 function App() {
   const [result, setResult] = useState(null);
@@ -33,6 +34,8 @@ function App() {
           {JSON.stringify(result, null, 2)}
         </pre>
       )}
+
+      <PingSweeper />
     </div>
   );
 }
